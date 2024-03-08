@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Mon extension",
+  "version": "1.0.0",
+  "description": "My first extension",
+  "icons": {
+    "16": "images/icon-16.png",
+    "24": "images/icon-24.png",
+    "64": "images/icon-64.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module",
+    "persistence": false //True seulement si on utilise des web requests
+  },
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "commands": {
+    "run-foo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Ctrl+Shift+F"
+      },
+      "description": "Ouverture de l'extension"
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+F",
+        "mac": "Ctrl+Shift+F",
+        "chromeos": "Ctrl+Shift+F",
+        "linux": "Ctrl+Shift+F"
+      }
+    }
+  }
+}
