@@ -3,6 +3,7 @@
   "name": "Mon extension",
   "version": "1.0.0",
   "description": "My first extension",
+  "permissions": ["notifications"],
   "icons": {
     "16": "images/icon-16.png",
     "24": "images/icon-24.png",
