@@ -16,6 +16,7 @@
     "persistence": false //True seulement si on utilise des web requests
   },
   "action": {
+    //Le bouton qui s'affiche dans la barre de navigation
     "default_popup": "hello.html"
   },
   "commands": {
